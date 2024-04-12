@@ -1,0 +1,60 @@
+
+{
+    "background_ING": "",
+    "searchURL":"https://duckduckgo.com/?q=",
+    "bookmark": [
+        {
+            "name": "translate",
+            "URL": "https://translate.google.com/",
+            "icon": "https://ssl.gstatic.com/translate/favicon.ico"
+        },
+        
+        {
+            "name": "動畫瘋",
+            "URL": "https://ani.gamer.com.tw/",
+            "icon": "https://ani.gamer.com.tw/apple-touch-icon-114.jpg"
+        },
+
+        {
+            "name": "bilibili",
+            "URL": "https://www.bilibili.com",
+            "icon": "https://static.hdslb.com/mobile/img/512.png"
+        },
+
+        {
+            "name": "youtube",
+            "URL": "https://www.youtube.com/",
+            "icon": "https://www.youtube.com/s/desktop/932eb6a8/img/favicon_144x144.png"
+        },
+
+        {
+            "name": "tronclass",
+            "URL": "https://tronclass.cyut.edu.tw/",
+            "icon": "https://tronclass.cyut.edu.tw/static/assets/images/favicon-b420ac72.ico"
+        },
+
+        {
+            "name": "trends",
+            "URL": "https://trends.google.com/home",
+            "icon": "https://ssl.gstatic.com/trends/favicon.ico"
+        },
+
+        {
+            "name": "google",
+            "URL": "https://www.google.com/",
+            "icon": "https://www.google.com/favicon.ico"
+        },
+
+        {
+            "name": "imgur",
+            "URL": "https://imgur.com/",
+            "icon": "https://s.imgur.com/images/favicon-152.png"
+        },
+
+        {
+            "name": "infnet",
+            "URL": "https://infnet.ddns.net:2077/",
+            "icon": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.wintotal.de%2Fmedia%2F2018%2F11%2Fdsmicon.png&f=1&nofb=1&ipt=516e44bf0c58d656de0a0f2e825c4f4251af5a2ca37f9756acdb98545a465c24&ipo=images"
+        }
+    ]
+}
