@@ -1,0 +1,43 @@
+body{
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif,"微軟正黑體";
+}
+li{
+    list-style-type: none ;
+}
+.package{
+    
+    margin: 0 auto;
+    max-width: 90vw;
+    min-width: 13rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items :start;
+    justify-content: space-around;
+    li{
+        /* background-color: #eee; */
+        margin: 0 0.1rem;
+        text-align: center;
+        textarea{
+            border-radius: 0.3rem;
+            outline: none;
+        }
+        input[type="button"]{
+            border: none;
+            background-color: #ccc;
+            border-radius: 1rem;
+            width: 5rem;
+            height: 2rem;
+            transition: transform .3s;
+            
+        }
+        input[type="button"]:hover{
+            transform:scale(1.2);
+        }
+        p{
+            background-color:lightgreen;
+            border-radius: 0.4rem;
+            margin: 1rem 2rem;
+        }
+    }
+}
