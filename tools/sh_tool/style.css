@@ -17,37 +17,40 @@ li{
     justify-content: space-around;
     background-color: #ddd;
     border-radius: 1rem;
-    li{
-        /* background-color: #eee; */
-        margin: 0.5rem 0;
-        text-align: center;
-        border-radius: 1rem;
-        background-color: #fff;
-        padding: 0 2rem;
-        box-shadow: 0.3rem 0.3rem 0.3rem #999 ;
-        textarea{
-            border-radius: 0.3rem;
-            outline: none;
-            border: 1px solid #999;
-            box-shadow: 0.1rem 0.1rem 0.1rem #999 ;
-        }
-        input[type="button"]{
-            border: none;
-            background-color: #ccc;
-            border-radius: 1rem;
-            width: 5rem;
-            height: 2rem;
-            transition: transform .3s;
-            
-        }
-        input[type="button"]:hover{
-            transform:scale(1.2);
-        }
-        p{
-            background-color:lightgreen;
-            border-radius: 0.4rem;
-            margin: 1rem 2rem;
-            box-shadow: 0.1rem 0.1rem 0.1rem #48c656 ;
-        }
-    }
+    
+    
+}
+.package li{
+    /* background-color: #eee; */
+    margin: 0.5rem 0;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: #fff;
+    padding: 0 2rem;
+    box-shadow: 0.3rem 0.3rem 0.3rem #999 ;
+    
+}
+.package li textarea{
+    border-radius: 0.3rem;
+    outline: none;
+    border: 1px solid #999;
+    box-shadow: 0.1rem 0.1rem 0.1rem #999 ;
+}
+.package li input[type="button"]{
+    border: none;
+    background-color: #ccc;
+    border-radius: 1rem;
+    width: 5rem;
+    height: 2rem;
+    transition: transform .3s;
+    
+}
+.package li input[type="button"]:hover{
+    transform:scale(1.2);
+}
+.package li p{
+    background-color:lightgreen;
+    border-radius: 0.4rem;
+    margin: 1rem 2rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem #48c656 ;
 }
