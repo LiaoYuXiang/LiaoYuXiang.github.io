@@ -457,7 +457,7 @@ const four_2 = (map, most, least, between, strictlyBet) => {
  * @returns [Map: fMap,
  *          number: E(x),
  *          number: V(x)
- *          number: O(x)(懶得找符號)
+ *          number: δ(x)
  * ]
  */
 const five_1 = (map) => {
@@ -515,7 +515,7 @@ const five_1 = (map) => {
 
 /**
  * 
- * @param {key: x => value: P(x)} map 
+ * @param {key: x => value: P(x)} map
  * @param {算式} str 
  * @returns [
  *              [
@@ -528,7 +528,7 @@ const five_1 = (map) => {
  *                  number: E(y)
  *                  number: E(y^2)
  *                  number: V(y)
- *                  number: O(y)(懶得找符號)
+ *                  number: δ(y)(懶得找符號)
  *              ]
  *          ]
  */

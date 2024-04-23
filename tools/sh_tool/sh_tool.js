@@ -167,8 +167,98 @@ dom.ts4_2.children[3].onclick=()=>{
     <br>P(between) 區間 ${outarr[2].toFixed(4)}
     <br>P(strictlyBet) 嚴格區間${outarr[3].toFixed(4)}`
 }
+dom.ts5_1.children[3].onclick=()=>{
+    const ts=dom.ts5_1
+    let inarr=ts.children[1].value.split('\n')
+    let inarr01=[]
+    for(i of inarr){
+        inarr01.push(i.split(' '))
 
+    }
+    for(i in inarr01){
+        for(j in inarr01[i]){
+            inarr01[i][j]=parseFloat(inarr01[i][j])
+        }
+    }
+    console.log(inarr01)
+    const inmap = new Map()
+    for(i in inarr01[0]){
+        inmap.set(inarr01[0][i],inarr01[1][i])
+    }
+    
+    let outarr=five_1(inmap)
+    // console.log(outarr[0].keys())
+    ts.children[4].innerHTML=`結果:
+        fMap<br>${[...outarr[0].keys()]}
+    <br>${[...outarr[0].values()]}<br>
+    <br>E(x)${outarr[1].toFixed(4)}
+    <br>V(x)${outarr[2].toFixed(4)}
+    <br>δ(x)${outarr[3].toFixed(4)}`
+}
+dom.ts5_2.children[3].onclick=()=>{
+    const ts=dom.ts5_2
+    let inarr=ts.children[1].value.split('\n')
+    let inarr01=[]
+    for(i of inarr){
+        inarr01.push(i.split(' '))
+    }
+    for(i in inarr01){
+        if(i>2)break
+        for(j in inarr01[i]){
+            inarr01[i][j]=parseFloat(inarr01[i][j])
+        }
+    }
+    // console.log(inarr01)
+    const inmap = new Map()
+    for(i in inarr01[0]){
+        inmap.set(inarr01[0][i],inarr01[1][i])
+    }
+    
+    let outarr=five_2(inmap,inarr[2])
+    // console.log(inmap,inarr[2])
+    // console.log(outarr)
+    ts.children[4].innerHTML=`結果:
+        fMap<br>${[...outarr[0].keys()]}
+    <br>E(x)${outarr[0][0].toFixed(4)}
+    <br>E(x^2)${outarr[0][1].toFixed(4)}
+    <br>V(x)${outarr[0][2].toFixed(4)}
+    <br>
+    <br>YMap
+    <br>${[...outarr[1][0].keys()]}
+    <br>${[...outarr[1][0].values()]}<br>
+    <br>E(y)${outarr[1][1].toFixed(4)}
+    <br>E(y^2)${outarr[1][2].toFixed(4)}
+    <br>V(y)${outarr[1][3].toFixed(4)}
+    <br>δ(y)${outarr[1][4].toFixed(4)}`
+}
+dom.ts6_1.children[3].onclick=()=>{
+    const ts=dom.ts6_1
+    let inarr=ts.children[1].value.split(' ')
+    inarr.forEach((element,indexm,arr) => {
+        arr[indexm]=parseFloat(element)
+    });
+    
 
+    let outarr=six_1(...inarr)
+    // console.log(...inarr)
+    ts.children[4].innerHTML=`結果:
+        P(剛好X位)${outarr[0].toFixed(4)}
+    <br>P(至少X位)${outarr[1].toFixed(4)}
+    <br>P(最多X位)${outarr[2].toFixed(4)}`
+}
+dom.ts6_2.children[3].onclick=()=>{
+    const ts=dom.ts6_2
+    let inarr=ts.children[1].value.split(' ')
+    inarr.forEach((element,indexm,arr) => {
+        arr[indexm]=parseFloat(element)
+    });
+    
 
+    let outarr=six_2(...inarr)
+    // console.log(...inarr)
+    ts.children[4].innerHTML=`結果:
+        P(剛好X位)${outarr[0].toFixed(4)}
+    <br>P(最多X位)${outarr[1].toFixed(4)}`
+}
 
 
