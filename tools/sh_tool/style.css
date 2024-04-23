@@ -5,6 +5,9 @@ body{
 li{
     list-style-type: none ;
 }
+h2{
+    text-align: center;
+}
 .package{
     
     margin: 0 auto;
