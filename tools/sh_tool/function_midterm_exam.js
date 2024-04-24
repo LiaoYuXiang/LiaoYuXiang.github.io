@@ -219,9 +219,9 @@ const two_2 = (...arr) => {
  *          number: 至少為X台的數量
  * } arr
  * @returns [number: 墨水剛好機率, 
- *          number: 雷射剛好數量
- *          number: 墨水至少數量
- *          number: 雷射至少數量
+ *          number: 雷射剛好機率
+ *          number: 墨水至少機率
+ *          number: 雷射至少機率
  * ]
  */
 const three_1 = (...arr) => {

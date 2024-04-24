@@ -24,10 +24,10 @@ dom.ts1_1.children[3].onclick=()=>{
 
     let outarr=one_1(...inarr)
     // console.log(outarr)
-    ts.children[4].innerHTML=`結果:<br>平均:${outarr[0].toFixed(4)}
+    ts.children[4].innerHTML=`結果:<br>平均:${outarr[0].toFixed(5)}
                                 <br>M中位數:${outarr[1]}
-                                <br>S平方:${outarr[2].toFixed(4)}
-                                <br>S:${outarr[3].toFixed(4)}
+                                <br>S平方:${outarr[2].toFixed(5)}
+                                <br>S:${outarr[3].toFixed(5)}
                                 <br>排序完:${outarr[4]}`
 }
 
@@ -58,12 +58,12 @@ dom.ts2_1.children[3].onclick=()=>{
     let outarr=two_1(...inarr)
     // console.log(...inarr)
     ts.children[4].innerHTML=`結果:A and B${outarr[0]}
-    <br>A'B${outarr[1].toFixed(4)}
-    <br>B'A${outarr[2].toFixed(4)}
-    <br>'(AB)${outarr[3].toFixed(4)}
-    <br>P(A and B)${outarr[4].toFixed(4)}
-    <br>P('A or 'B)${outarr[5].toFixed(4)}
-    <br>P(只有其中一個)${outarr[6].toFixed(4)}`
+    <br>A and B':${outarr[1].toFixed(5)}
+    <br>B and A':${outarr[2].toFixed(5)}
+    <br>(AB)':${outarr[3].toFixed(5)}
+    <br>P(A and B):${outarr[4].toFixed(5)}
+    <br>P(A' or B'):${outarr[5].toFixed(5)}
+    <br>P(只有其中一個):${outarr[6].toFixed(5)}`
 }
 dom.ts2_2.children[3].onclick=()=>{
     const ts=dom.ts2_2
@@ -76,12 +76,12 @@ dom.ts2_2.children[3].onclick=()=>{
     let outarr=two_2(...inarr)
     // console.log(...inarr)
     ts.children[4].innerHTML=`結果:
-    P(A1 or A2)${outarr[0].toFixed(4)}
-    <br>P('A1 and 'A2)${outarr[1].toFixed(4)}
-    <br>P(A1 or A2 or A3)${outarr[2].toFixed(4)}
-    <br>P('A1 and 'A2 and 'A3)(outside)${outarr[3].toFixed(4)}
-    <br>P('A1 and 'A2 and A3)${outarr[4].toFixed(4)}
-    <br>P(('A1 and 'A2) or A3)${outarr[5].toFixed(4)}`
+    P(A1 or A2):${outarr[0].toFixed(5)}
+    <br>P(A1' and A2'):${outarr[1].toFixed(5)}
+    <br>P(A1 or A2 or A3):${outarr[2].toFixed(5)}
+    <br>P(A1' and A2' and A3'):(outside)${outarr[3].toFixed(5)}
+    <br>P(A1' and A2' and A3):${outarr[4].toFixed(5)}
+    <br>P((A1' and A2') or A3):${outarr[5].toFixed(5)}`
 }
 dom.ts3_1.children[3].onclick=()=>{
     const ts=dom.ts3_1
@@ -94,10 +94,10 @@ dom.ts3_1.children[3].onclick=()=>{
     let outarr=three_1(...inarr)
     // console.log(...inarr)
     ts.children[4].innerHTML=`結果:
-        墨水剛好機率${outarr[0].toFixed(4)}
-    <br>雷射剛好數量${outarr[1].toFixed(4)}
-    <br>墨水至少數量${outarr[2].toFixed(4)}
-    <br>雷射至少數量${outarr[3].toFixed(4)}`
+        B剛好機率:${outarr[0].toFixed(5)}
+    <br>A剛好機率:${outarr[1].toFixed(5)}
+    <br>B至少機率:${outarr[2].toFixed(5)}
+    <br>A至少機率:${outarr[3].toFixed(5)}`
 }
 dom.ts3_2.children[3].onclick=()=>{
     const ts=dom.ts3_2
@@ -110,10 +110,10 @@ dom.ts3_2.children[3].onclick=()=>{
     let outarr=three_2(...inarr)
     // console.log(...inarr)
     ts.children[4].innerHTML=`結果:
-        P(A | B)${outarr[0].toFixed(4)}
-    <br>P(A | B or C)${outarr[1].toFixed(4)}
-    <br>P(A | A or B or C)${outarr[2].toFixed(4)}
-    <br>P(A or B | C)${outarr[3].toFixed(4)}`
+        P(A | B):${outarr[0].toFixed(5)}
+    <br>P(A | B or C):${outarr[1].toFixed(5)}
+    <br>P(A | A or B or C):${outarr[2].toFixed(5)}
+    <br>P(A or B | C):${outarr[3].toFixed(5)}`
 }
 dom.ts4_1.children[3].onclick=()=>{
     const ts=dom.ts4_1
@@ -125,20 +125,20 @@ dom.ts4_1.children[3].onclick=()=>{
 
     let outarr=four_1(...inarr)
     ts.children[4].innerHTML=`結果:
-        P(A1 and B)${outarr[0][0].toFixed(4)}
-    <br>P(A1 and 'B)${outarr[0][1].toFixed(4)}
-    <br>P(A2 and B)${outarr[0][2].toFixed(4)}
-    <br>P(A2 and 'B)${outarr[0][3].toFixed(4)}
-    <br>P(A3 and B)${outarr[0][4].toFixed(4)}
-    <br>P(A3 and 'B)${outarr[0][5].toFixed(4)}
-    <br>P(B)${outarr[1][0].toFixed(4)}
-    <br>P('B)${outarr[1][1].toFixed(4)}
-    <br>P(A1 | B)${outarr[2][0].toFixed(4)}
-    <br>P(A1 | 'B)${outarr[2][1].toFixed(4)}
-    <br>P(A2 | B)${outarr[2][2].toFixed(4)}
-    <br>P(A2 | 'B)${outarr[2][3].toFixed(4)}
-    <br>P(A3 | B)${outarr[2][4].toFixed(4)}
-    <br>P(A3 | 'B)${outarr[2][5].toFixed(4)}`
+        P(A1 and B):${outarr[0][0].toFixed(5)}
+    <br>P(A1 and B'):${outarr[0][1].toFixed(5)}
+    <br>P(A2 and B):${outarr[0][2].toFixed(5)}
+    <br>P(A2 and B'):${outarr[0][3].toFixed(5)}
+    <br>P(A3 and B):${outarr[0][4].toFixed(5)}
+    <br>P(A3 and B'):${outarr[0][5].toFixed(5)}
+    <br>P(B):${outarr[1][0].toFixed(5)}
+    <br>P(B'):${outarr[1][1].toFixed(5)}
+    <br>P(A1 | B):${outarr[2][0].toFixed(5)}
+    <br>P(A1 | B'):${outarr[2][1].toFixed(5)}
+    <br>P(A2 | B):${outarr[2][2].toFixed(5)}
+    <br>P(A2 | B'):${outarr[2][3].toFixed(5)}
+    <br>P(A3 | B):${outarr[2][4].toFixed(5)}
+    <br>P(A3 | B'):${outarr[2][5].toFixed(5)}`
 }
 dom.ts4_2.children[3].onclick=()=>{
     const ts=dom.ts4_2
@@ -162,10 +162,10 @@ dom.ts4_2.children[3].onclick=()=>{
     let outarr=four_2(inmap,inarr01[2][0],inarr01[2][1],[inarr01[2][2],inarr01[2][3]],[inarr01[2][4],inarr01[2][5]])
     console.log(outarr)
     ts.children[4].innerHTML=`結果:
-        P(most) 至多 ${outarr[0].toFixed(4)}
-    <br>P(least) 至少 ${outarr[1].toFixed(4)}
-    <br>P(between) 區間 ${outarr[2].toFixed(4)}
-    <br>P(strictlyBet) 嚴格區間${outarr[3].toFixed(4)}`
+        P(most) 至多: ${outarr[0].toFixed(5)}
+    <br>P(least) 至少: ${outarr[1].toFixed(5)}
+    <br>P(between) 區間: ${outarr[2].toFixed(5)}
+    <br>P(strictlyBet) 嚴格區間:${outarr[3].toFixed(5)}`
 }
 dom.ts5_1.children[3].onclick=()=>{
     const ts=dom.ts5_1
@@ -191,9 +191,9 @@ dom.ts5_1.children[3].onclick=()=>{
     ts.children[4].innerHTML=`結果:
         fMap<br>${[...outarr[0].keys()]}
     <br>${[...outarr[0].values()]}<br>
-    <br>E(x)${outarr[1].toFixed(4)}
-    <br>V(x)${outarr[2].toFixed(4)}
-    <br>δ(x)${outarr[3].toFixed(4)}`
+    <br>E(x)${outarr[1].toFixed(5)}
+    <br>V(x)${outarr[2].toFixed(5)}
+    <br>δ(x)${outarr[3].toFixed(5)}`
 }
 dom.ts5_2.children[3].onclick=()=>{
     const ts=dom.ts5_2
@@ -218,18 +218,17 @@ dom.ts5_2.children[3].onclick=()=>{
     // console.log(inmap,inarr[2])
     // console.log(outarr)
     ts.children[4].innerHTML=`結果:
-        fMap<br>${[...outarr[0].keys()]}
-    <br>E(x)${outarr[0][0].toFixed(4)}
-    <br>E(x^2)${outarr[0][1].toFixed(4)}
-    <br>V(x)${outarr[0][2].toFixed(4)}
+        E(x):${outarr[0][0].toFixed(5)}
+    <br>E(x^2):${outarr[0][1].toFixed(5)}
+    <br>V(x):${outarr[0][2].toFixed(5)}
     <br>
-    <br>YMap
+    <br>YMap:
     <br>${[...outarr[1][0].keys()]}
     <br>${[...outarr[1][0].values()]}<br>
-    <br>E(y)${outarr[1][1].toFixed(4)}
-    <br>E(y^2)${outarr[1][2].toFixed(4)}
-    <br>V(y)${outarr[1][3].toFixed(4)}
-    <br>δ(y)${outarr[1][4].toFixed(4)}`
+    <br>E(y):${outarr[1][1].toFixed(5)}
+    <br>E(y^2):${outarr[1][2].toFixed(5)}
+    <br>V(y):${outarr[1][3].toFixed(5)}
+    <br>δ(y):${outarr[1][4].toFixed(5)}`
 }
 dom.ts6_1.children[3].onclick=()=>{
     const ts=dom.ts6_1
@@ -242,9 +241,9 @@ dom.ts6_1.children[3].onclick=()=>{
     let outarr=six_1(...inarr)
     // console.log(...inarr)
     ts.children[4].innerHTML=`結果:
-        P(剛好X位)${outarr[0].toFixed(4)}
-    <br>P(至少X位)${outarr[1].toFixed(4)}
-    <br>P(最多X位)${outarr[2].toFixed(4)}`
+        P(剛好X位):${outarr[0].toFixed(5)}
+    <br>P(至少X位):${outarr[1].toFixed(5)}
+    <br>P(最多X位):${outarr[2].toFixed(5)}`
 }
 dom.ts6_2.children[3].onclick=()=>{
     const ts=dom.ts6_2
@@ -257,8 +256,9 @@ dom.ts6_2.children[3].onclick=()=>{
     let outarr=six_2(...inarr)
     // console.log(...inarr)
     ts.children[4].innerHTML=`結果:
-        P(剛好X位)${outarr[0].toFixed(4)}
-    <br>P(最多X位)${outarr[1].toFixed(4)}`
+        P(剛好X位):${outarr[0].toFixed(5)}
+    <br>P(至少X位):${outarr[1].toFixed(5)}
+    <br>P(最多X位):${outarr[2].toFixed(5)}`
 }
 
 
