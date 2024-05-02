@@ -12,7 +12,7 @@ dom.ts7_1.children[3].onclick=()=>{
     });
     
 
-    let outarr=six_1(...inarr)
+    let outarr=seven_1(...inarr)
     // console.log(...inarr)
     ts.children[4].innerHTML=`結果:
         P(剛好X位):${outarr[0].toFixed(5)}
