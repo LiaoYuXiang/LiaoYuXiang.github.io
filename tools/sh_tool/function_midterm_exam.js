@@ -90,13 +90,13 @@ const one_2 = (...arr) => {
     let med = toFix((arr.length % 2 === 0) ? 
                 (arr[arr.length / 2  - 1] + arr[arr.length / 2]) / 2 :
                 arr[Math.floor(arr.length / 2)])
-    // print(med)
+    print(med)
 
     let lowerArr = arr.slice(0, Math.round(arr.length / 2))
     let upperArr = arr.slice(Math.floor(arr.length / 2), arr.length)
 
-    // print(lowerArr)
-    // print(upperArr)
+    print(lowerArr)
+    print(upperArr)
 
     // let upperForth = 0
     // if ((upperArr.length % 2 === 0)) {
@@ -107,7 +107,7 @@ const one_2 = (...arr) => {
     let upperForth = toFix((upperArr.length % 2 === 0) ?
                     (upperArr[Math.floor(upperArr.length / 2) - 1] + upperArr[Math.floor(upperArr.length / 2)]) / 2 :
                     upperArr[Math.floor(upperArr.length / 2)])
-    // print(upperForth)
+    print(upperForth)
 
     // let lowerForth = 0
     // if ((lowerArr.length % 2 === 0)) {
@@ -118,7 +118,7 @@ const one_2 = (...arr) => {
     let lowerForth = toFix((lowerArr.length % 2 === 0) ?
                     (lowerArr[Math.floor(lowerArr.length / 2) - 1] + lowerArr[Math.floor(lowerArr.length / 2)]) / 2 :
                     lowerArr[Math.floor(lowerArr.length / 2)])
-    // print(lowerForth)
+    print(lowerForth)
 
     let forthSpread = toFix(upperForth - lowerForth)
 
@@ -155,8 +155,8 @@ const two_1 = (...arr) => {
 }
 
 /**
- * two-2 題目給a, b, aAndB 算出下面指標
- * @parms { number: P(A1),
+ * two-1 題目給a, b, aAndB 算出下面指標
+ * @parms {number: P(A1),
  *          number: P(A2),
  *          number: P(A3),
  *          number: P(A1 and A2),
@@ -219,9 +219,9 @@ const two_2 = (...arr) => {
  *          number: 至少為X台的數量
  * } arr
  * @returns [number: 墨水剛好機率, 
- *          number: 雷射剛好機率
- *          number: 墨水至少機率
- *          number: 雷射至少機率
+ *          number: 雷射剛好數量
+ *          number: 墨水至少數量
+ *          number: 雷射至少數量
  * ]
  */
 const three_1 = (...arr) => {
@@ -275,9 +275,9 @@ const three_1 = (...arr) => {
  *          number: A and B and C
  * } arr 
  * @returns [number: P(A | B)
- *           number: P(A | B or C)
- *           number: P(A | A or B or C)
- *           number: P(A or B | C)
+ *          number: P(A | B or C)
+ *          number: P(A | A or B or C)
+ *          number: P(A or B | C)
  * ]
  */
 const three_2 = (...arr) => {
@@ -322,7 +322,7 @@ const three_2 = (...arr) => {
 }
 
 /**
- * @param  {number: P(A1),
+ * @param  {numebr: P(A1),
  *          number: P(A2),
  *          number: P(A3),
  *          number: P(B | A1),
@@ -394,7 +394,7 @@ const four_1 = (...arr) => {
  * @param {number} least (至少)
  * @param {[number: min, number: max]} between (區間(包含最小與最大))
  * @param {[number: min, number: max]} strictlyBet (嚴格區間(不包含最小與最大))
- * @returns [ number: P(most) 至多,
+ * @returns [number: P(most) 至多,
  *            number: P(least) 至少,
  *            number: P(between) 區間,
  *            number: P(strictlyBet) 嚴格區間
@@ -457,7 +457,7 @@ const four_2 = (map, most, least, between, strictlyBet) => {
  * @returns [Map: fMap,
  *          number: E(x),
  *          number: V(x)
- *          number: δ(x)
+ *          number: O(x)(懶得找符號)
  * ]
  */
 const five_1 = (map) => {
@@ -480,7 +480,7 @@ const five_1 = (map) => {
     //     fMap.set(arr[0][i], toFix(sum))
     //     // fArr[arr[0][i]] = toFix(sum)
     // }
-    // print(fMap)
+    print(fMap)
 
     let E_of_x = () => {
         let sum = 0;
@@ -515,7 +515,7 @@ const five_1 = (map) => {
 
 /**
  * 
- * @param {key: x => value: P(x)} map
+ * @param {key: x => value: P(x)} map 
  * @param {算式} str 
  * @returns [
  *              [
@@ -528,7 +528,7 @@ const five_1 = (map) => {
  *                  number: E(y)
  *                  number: E(y^2)
  *                  number: V(y)
- *                  number: δ(y)(懶得找符號)
+ *                  number: O(y)(懶得找符號)
  *              ]
  *          ]
  */
@@ -712,7 +712,7 @@ const seven_1 = (lambda, exactlyX, mostX) => {
         return toFix(Math.exp(-lambda) * (lambda ** x) / starMul(x))
     }
     let P_exactly = math_P(exactlyX)
-    // print(P_exactly)
+    print(P_exactly)
     // print("===================")
 
     
@@ -723,7 +723,7 @@ const seven_1 = (lambda, exactlyX, mostX) => {
         }
         return sum
     }
-    // print(P_most())
+    print(P_most())
     // print("===================")
     return [P_exactly, P_most()]
 }
@@ -744,10 +744,10 @@ const seven_2 = () => {
 //     19.2, 12.7, 15.6, 13.5, 12.9
 // ]))
 
-// print(one_2(94, 92, 94, 95, 90,
-//             98, 90, 100, 85, 85,
-//             115, 75, 125, 70, 60,
-//             125, 40, 52, 55))
+print(one_2(94, 92, 94, 95, 90,
+            98, 90, 100, 85, 85,
+            115, 75, 125, 70, 60,
+            125, 40, 52, 55))
 
 // print(two_1(0.5, 0.4, 0.25))
 
