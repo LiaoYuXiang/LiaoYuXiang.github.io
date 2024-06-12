@@ -7,7 +7,7 @@ const dom={
 dom.ts7_1.children[3].onclick=()=>{
     const ts=dom.ts7_1
     let inarr=ts.children[1].value.split(' ')
-    console.log(inarr)
+    // console.log(inarr)
     inarr.forEach((element,indexm,arr) => {
         arr[indexm]=parseFloat(element)
     });

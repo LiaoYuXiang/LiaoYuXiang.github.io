@@ -1,0 +1,5 @@
+{
+    "name":"Panel and hvPlot",
+    "description":"Leverage hvPlot interactive feature and extending it with Panel.",
+    "packages":["sympy"]
+}

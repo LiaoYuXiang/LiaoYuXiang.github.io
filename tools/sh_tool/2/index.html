@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sh_tool</title>
     <link rel="stylesheet" href="../style.css">
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script> 
+    
 </head>
 <body>
     <h2>題目數字列空格分割</h2>
@@ -24,7 +28,38 @@
             <p>結果:<br></p>
         </li>
     </ul>
-    <script src="../function_midterm_exam.js"></script>
+    <ul>
+        <li id="ts8_1" class="question_out">
+            <h5>7-1
+                <br>
+                給以下參數算出指標
+                <br>lambda
+                <br>exactlyX (剛好X位)
+                <br>mostX (最多X位)
+
+            </h5>
+            <textarea  cols="30" rows="10"></textarea>
+            <br>
+            <input type="button" value="計算">
+            <p>結果:<br>
+                <script type="py" config="../pyscript.json">
+                    from pyscript import display
+                    from pyscript import document
+                    from sympy import integrate, erf, exp, sin, log, oo, pi, sinh, symbols
+                    ts8_1=document.querySelector('#ts8_1')
+                    print(ts8_1.children[0])
+                    def one():
+
+                        ts8_1.children[4].innerHTML=integrate(2*x + sinh(x), x)
+                    ts8_1.children[3].onclick=one()
+                </script>
+            </p>
+        </li>
+    </ul>
+
+    <!-- <script type="py" src="../main.py" config="../pyscript.json"></script> -->
+    <!-- <script src="../function_midterm_exam.js"></script> -->
+
     <script src="sh_tool2.js"></script>
 </body>
 </html>
