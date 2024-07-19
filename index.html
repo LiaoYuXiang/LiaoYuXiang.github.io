@@ -1,5 +1,6 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,68 @@
     <link rel="stylesheet" href="./CSS/index.css">
 </head>
 <body>
-    <p>主頁面目前沒內容</p>
-    <script src="./javascript/index_main.js"></script>
+    <div class="container">
+        <header>
+            <h1>💻 Xiang主頁面 🌸</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#home">首頁</a></li>
+                <li><a href="#projects">專案</a></li>
+                <li><a href="#blog">部落格</a></li>
+                <li><a href="#contact">聯絡我</a></li>
+            </ul>
+        </nav>
+        <div class="content-wrapper">
+            <aside class="sidebar-left">
+                <div class="code-icon">👩‍💻</div>
+                <h2>關於我</h2>
+                <p>嗨！我是小櫻，一個熱愛編程的女孩。我喜歡用代碼創造美麗的事物，並且熱衷於前端開發！</p>
+            </aside>
+            <main>
+                <div class="code-icon">🖥️</div>
+                <h2>最新專案：可愛風格按鈕</h2>
+                <p>這是我最近完成的一個可愛風格的按鈕組件，使用HTML和CSS實現：</p>
+                <pre>
+                    &lt;button class="cute-button"&gt;
+                    Click me!
+                    &lt;/button&gt;
+
+                    &lt;style&gt;
+                    .cute-button {
+                    background-color: #ffb3d9;
+                    border: none;
+                    border-radius: 20px;
+                    color: white;
+                    padding: 10px 20px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    transition-duration: 0.4s;
+                    cursor: pointer;
+                    }
+
+                    .cute-button:hover {
+                    background-color: #ff80bf;
+                    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 
+                                0 17px 50px 0 rgba(0,0,0,0.19);
+                    }
+                    &lt;/style&gt;
+                </pre>
+            </main>
+            <aside class="sidebar-right">
+                <div class="code-icon">📮</div>
+                <h2>聯絡我</h2>
+                <p>Email: sakura@codemail.com</p>
+                <p>GitHub: @sakura_codes</p>
+                <p>歡迎交流程式設計心得哦！💖</p>
+            </aside>
+        </div>
+        <footer>
+            <p>🌈 2024 程式少女的編碼天地. 用愛編碼. 🌈</p>
+        </footer>
+    </div>
 </body>
 </html>
